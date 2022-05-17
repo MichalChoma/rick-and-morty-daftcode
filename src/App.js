@@ -14,9 +14,6 @@ function App() {
   }
 
   const removeFromFav = id => {
-    // const prevArr = favCharacters;
-    // const filteredChar = prevArr.filter(el => el !== id)
-    // setFavCharacters(filteredChar)
     setFavCharacters(prevState => prevState.filter(el => el !== id))
   }
 
