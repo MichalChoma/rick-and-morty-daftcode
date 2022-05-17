@@ -1,0 +1,197 @@
+.wrapper{
+    padding: 2rem 1rem;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .filters{
+        padding: 1rem 1.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (min-width:751px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .inputWrapper{
+        
+            display: flex;
+            width: 100%;
+            padding: 0 .5rem;
+
+            @media (max-width:750px) {
+                justify-content: center;
+            }
+
+            input{
+                width: 100%;
+                max-width: 350px;
+                border-radius: .25rem;
+                padding: .5rem;
+                box-shadow: 0px 1px 1px #888;
+                border: 1px solid #b8b8b8;
+                
+            }
+    
+            input:focus{
+                outline: none;
+                border:2px solid #2F9331;
+            }
+    
+            button{
+                background-color: #fff;
+                background-color:#2F9331;
+                padding: .5rem;
+                border-radius: .25rem;
+                opacity: 0.9;
+                box-shadow: 0px 1px 1px #f7f7f7;
+                border: 1px solid #b8b8b8;
+                cursor: pointer;
+                transition: opacity .3s ease-in-out;
+    
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+
+        .selectWrapper{
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            
+
+
+            @media (max-width:750px) {
+                flex-direction: column;
+                margin-top: 1rem;
+            }
+            @media (min-width:751px) {
+                justify-content: flex-end;
+            }
+
+            .selectInput{
+                
+                border: 1px solid #E8EAED;
+                border-radius: 5px;
+                padding: 0.25rem;
+                background: white;
+                box-shadow: 0 1px 3px -2px #9098A9;
+                cursor: pointer;
+                font-family: inherit;
+                font-size: 16px;
+
+                
+                @media (max-width:650px) {
+                    width: 100%;
+                    margin-top: .5rem;
+                    
+                }
+                
+                @media (min-width:1000px) {
+                    margin: 1rem;
+                }
+            }
+
+            button{
+                @media (max-width:650px) {
+                    width: 100%;
+                    margin-top: .5rem;
+                    
+                }
+                
+                @media (min-width:1000px) {
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+
+
+
+    
+
+    .cardsWrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width:750px) {
+            flex-direction: row;
+            justify-content:center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+
+    .paginationWrapper{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+
+            
+        }
+    }
+
+    .btnPage {
+        
+        width: 80%;
+        margin:2rem .5rem;
+        border-radius: 10px;
+        border: 2px solid #FFF;
+        padding: .5rem 1rem;
+        background-color: #2F9331;
+        color: #FFF;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        font-weight: bold;
+
+        &:hover{
+            color: #2F9331;
+            background-color: transparent;
+            border: 2px solid #2F9331;
+        }
+
+        
+        
+
+    }
+
+    .error{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .errorBtn{
+        border-radius: 10px;
+        border: 2px solid #FFF;
+        padding: .5rem 1rem;
+        background-color: #d32e05;
+        color: #FFF;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        max-width: 300px;
+        font-weight: bold;
+
+        &:hover{
+            color: #d32e05;
+            background-color: transparent;
+            border: 2px solid #d32e05;
+        }
+    }
+}
